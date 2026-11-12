@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrast Test</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 20px; background: white; }
+    h1 { font-size: 48px; color: #333; }
+    .pass-aa { color: #333; font-size: 16px; } /* 12.6:1 on white */
+    .pass-aaa { color: #000; font-size: 16px; } /* 21:1 on white */
+    .fail-aa { color: #777; font-size: 16px; } /* 4.5:1 on white - barely passes AA */
+    .fail-aaa { color: #999; font-size: 16px; } /* 2.8:1 on white - fails AA */
+    .large-fail-aaa { color: #666; font-size: 24px; font-weight: bold; } /* 5.9:1 - passes AA, fails AAA */
+  </style>
+</head>
+<body>
+  <h1>Contrast Test Page</h1>
+  <p class="pass-aa">This text passes WCAG AA (12.6:1).</p>
+  <p class="pass-aaa">This text passes WCAG AAA (21:1).</p>
+  <p class="fail-aa">This text barely passes WCAG AA (4.5:1).</p>
+  <p class="fail-aaa">This text fails WCAG AA (2.8:1).</p>
+  <p class="large-fail-aaa">This large bold text passes AA but fails AAA (5.9:1).</p>
+</body>
+</html>
