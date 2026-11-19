@@ -86,9 +86,8 @@ program
                   console.log(`  - "${f.text}" (${f.fontSize}px) above <${f.above}> "${f.headingText}"`);
                 } else if (probe === 'color-contrast') {
                   console.log(`  - "${f.text}" (${f.fontSize}px, ${f.fontWeight}, ${f.contrastRatio}:1) <${f.tagName}> fails WCAG ${f.level} (need ${f.requiredAA}:1 AA, ${f.requiredAAA}:1 AAA)`);
-                }<<<TRUNCATED>>>>>>
-                  }
-                } else {
+                }
+                else {
                   console.log(`  - ${JSON.stringify(f)}`);
                 }
               }
