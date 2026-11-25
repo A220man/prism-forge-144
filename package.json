@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node --test tests/inspection-files.test.mjs",
+    "test": "node --test tests/inspection-files.test.mjs tests/inspect.test.mjs",
     "inspect": "node scripts/inspect.mjs"
   },
   "keywords": [
