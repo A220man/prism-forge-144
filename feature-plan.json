@@ -5,12 +5,21 @@
     {
       "id": "continue-implementation",
       "title": "Continue implementation and resolve known failures",
-      "status": "in_progress",
+      "status": "done",
       "acceptance": [
-        "Run checks, fix failures, and implement the next planned feature"
+        "Run checks, fix failures, and implement the next planned feature",
+        "npm test runs the full suite (20 tests) and passes"
       ],
-      "implementation": [],
-      "tests": []
+      "implementation": [
+        "scripts/inspect.mjs",
+        "lib/inspection-files.mjs",
+        "lib/probe.mjs",
+        "lib/server.mjs"
+      ],
+      "tests": [
+        "tests/inspection-files.test.mjs",
+        "tests/inspect.test.mjs"
+      ]
     }
   ]
 }
